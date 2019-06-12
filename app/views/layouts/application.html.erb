@@ -4,7 +4,7 @@
   <title>BeetrackTest</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAaejhSqx0ezHaagtUarFljTp427Ughsk4'%>
+  <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=#{Rails.application.secrets.google_api_token}'%>
   <%= csrf_meta_tags %>
   <%= include_gon %>
   <%= yield(:head_tags) %>
