@@ -3,6 +3,8 @@ class Api::V1::GpsController < ApplicationController
 
     include Response
 
+    # POST /api/v1/gps
+    # Add a new vehicle and new gps_points
     def index
         @vehicle = Vehicle.find_by(vehicle_identifier: params[:vehicle_identifier])
 
