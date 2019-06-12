@@ -1,0 +1,12 @@
+<% provide :head_tags do %>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            initMap(-33.447190, -70.661106, gon.vehicles)
+        });
+    </script>
+<% end %>
+
+<div id="map_div">
+    <p>Beetrack Vehicle Detector</p>
+    <div id="map"></div>
+</div>
