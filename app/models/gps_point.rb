@@ -6,6 +6,7 @@ class GpsPoint < ActiveRecord::Base
 
     before_create :latitude_and_longitude_are_numbers?
 
+    # Check latitude and longitude values
     def latitude_and_longitude_are_numbers?
         if (Float(latitude) rescue nil) == nil
             errors.add(:latitude, 'latitude is not a number')
