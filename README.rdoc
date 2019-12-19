@@ -1,4 +1,4 @@
-== README
+== BEETRACK TEST APP
 
 This app receive new vehicles with GPS points by an API endpoint and show them in a map view
 
