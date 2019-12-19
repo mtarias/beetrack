@@ -5,7 +5,7 @@ This app receive new vehicles with GPS points by an API endpoint and show them i
 Installation Requirements:
 
 * Ruby version 2.3.0
-* Rails version
+* Rails version 4.2.6
 * Postgres version 9.5.14
 
 Instalation process:
